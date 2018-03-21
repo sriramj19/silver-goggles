@@ -1,0 +1,32 @@
+<div class="login-page" [@routerTransition]>
+    <div class="row">
+        <div class="col-sm-4">
+            <!-- <img src="assets/images/logo.png" width="150px" class="user-avatar" /> -->
+            <h1 class="lead">Quick Books Integration</h1>
+            <mat-card style="padding: 2em">
+                <div class="row">
+                    <div class="col">
+                        <mat-form-field class="full-width">
+                            <input matInput type="text" placeholder="Username">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <mat-form-field class="full-width">
+                            <input matInput type="password" placeholder="Password">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="text-center">
+                            <button mat-raised-button color="primary" [routerLink]="['/dashboard']" (click)="onLoggedin()">Log in</button>
+                            <button mat-raised-button color="primary">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</div>
