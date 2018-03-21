@@ -13,6 +13,7 @@ import { SidebarCommonService } from '../shared';
 
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
     imports: [
@@ -20,7 +21,8 @@ import { MatIconModule } from '@angular/material/icon';
         LayoutRoutingModule,
         HttpClientModule,
         MatMenuModule,
-        MatIconModule
+        MatIconModule,
+        MatButtonModule
     ],
     declarations: [
         LayoutComponent,

@@ -44,4 +44,9 @@ export class HeaderComponent implements OnInit {
     onLoggedout() {
         localStorage.removeItem('isLoggedin');
     }
+
+    logout() {
+        this.onLoggedout();
+        this.router.navigate(['/login']);
+    }
 }

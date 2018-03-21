@@ -3,4 +3,19 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand align-items-center" routerLink="">Quick Books Integration</a>
+    <div class="form-inline my-2 my-lg-0">
+        <button mat-icon-button color="accent" [matMenuTriggerFor]="menu">
+            <mat-icon>account_circle</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" class="logout-menu">
+            <button mat-menu-item disabled>
+                <mat-icon>account_box</mat-icon>
+                <span>Admin</span>
+            </button>
+            <button class="clickable" (click)="logout()" mat-menu-item>
+                <mat-icon>exit_to_app</mat-icon>
+                <span>Logout</span>
+            </button>
+        </mat-menu>
+    </div>
 </nav>
